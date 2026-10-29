@@ -1,0 +1,377 @@
+/* General page design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Home section */
+header {
+    background: linear-gradient(135deg, #14213d, #355c7d);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #1d3557;
+    text-align: center;
+    padding: 16px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #14213d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 8px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Skills list */
+#skills ul {
+    padding-left: 25px;
+}
+
+#skills li {
+    margin-bottom: 8px;
+}
+
+/* Project cards */
+#projects article {
+    background-color: #f4f7fb;
+    padding: 18px;
+    margin-top: 15px;
+    border-left: 4px solid #fca311;
+    border-radius: 8px;
+}
+
+#projects article h3 {
+    color: #1d3557;
+    margin-bottom: 8px;
+}
+
+/* Contact links and details */
+#contact a {
+    color: #1d3557;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark section {
+    background-color: #242424;
+    color: #f5f5f5;
+}
+
+body.dark section h2,
+body.dark #projects article h3 {
+    color: #fca311;
+}
+
+body.dark #projects article {
+    background-color: #333333;
+}
+
+body.dark #skills li {
+    color: #f5f5f5;
+}
+
+#darkToggle {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 18px;
+    background-color: #fca311;
+    color: #14213d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#darkToggle:hover {
+    background-color: #e59400;
+}
+
+/* Project images */
+.project-img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* College image */
+.college-img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio links */
+#portfolio-links a {
+    color: #1d3557;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#portfolio-links a:hover {
+    color: #fca311;
+    text-decoration: underline;
+}
+
+/* Back to Top button */
+#backToTop {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 18px;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ========================================= */
+/* CERTIFICATES SECTION                      */
+/* ========================================= */
+
+#certificates .certificate-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* Grid layout for certificate cards */
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+/* Individual certificate card */
+.certificate-card {
+    background-color: #f4f7fb;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    padding: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Certificate preview image */
+.certificate-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dde3ea;
+    background-color: #eef2f7;
+    margin-bottom: 12px;
+}
+
+/* Certificate title */
+.certificate-card h3 {
+    color: #1d3557;
+    font-size: 17px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+/* Issuer name */
+.certificate-card .issuer {
+    color: #fca311;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/* Date */
+.certificate-card .date {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.certificate-card .desc {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 14px;
+}
+
+/* View Certificate button/link */
+.certificate-card a {
+    display: inline-block;
+    padding: 9px 16px;
+    background-color: #1d3557;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: background-color 0.2s;
+    margin-top: auto;
+}
+
+.certificate-card a:hover {
+    background-color: #fca311;
+    color: #14213d;
+}
+
+/* Dark mode: certificates */
+body.dark #certificates .certificate-intro {
+    color: #bbbbbb;
+}
+
+body.dark .certificate-card {
+    background-color: #333333;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .certificate-card:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .certificate-card h3 {
+    color: #fca311;
+}
+
+body.dark .certificate-card .issuer {
+    color: #ffc35c;
+}
+
+body.dark .certificate-card .date {
+    color: #aaaaaa;
+}
+
+body.dark .certificate-card .desc {
+    color: #e0e0e0;
+}
+
+body.dark .certificate-card img {
+    border-color: #444444;
+    background-color: #1a1a1a;
+}
+
+body.dark .certificate-card a {
+    background-color: #fca311;
+    color: #14213d;
+}
+
+body.dark .certificate-card a:hover {
+    background-color: #e59400;
+    color: #14213d;
+}
+
+/* Responsive: certificates on small screens */
+@media (max-width: 600px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-card img {
+        height: 180px;
+    }
+}
