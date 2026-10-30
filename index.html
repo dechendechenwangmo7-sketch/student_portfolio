@@ -4,259 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dechen Wangmo | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Home Section -->
-    <header id="home">
-        <img src="images/pic.jpeg"
-             alt="Dechen Wangmo's Profile Picture"
-             width="180">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <img src="images/pic.jpeg" alt="Dechen Wangmo" class="profile-pic">
+            <h1>Dechen Wangmo</h1>
+            <p class="role">Aspiring IT Professional & Web Developer</p>
+            
+            <nav class="main-nav">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills & Interests</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-        <h1>Dechen Wangmo</h1>
-        <p>Aspiring IT Professional and Web Developer</p>
-        <p>Hello! Welcome to my personal portfolio website.</p>
-    </header>
+            <div class="sidebar-controls">
+                <button id="darkToggle">🌙 Dark Mode</button>
+            </div>
+        </div>
+    </aside>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#interests">Interests</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- Dark Mode Button -->
-    <button id="darkToggle">Switch to Dark Mode</button>
-
-    <main>
-        <!-- About Me Section -->
+    <!-- Right Main Content -->
+    <main class="content">
+        
+        <!-- About Section -->
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                My name is Dechen Wangmo, and I am from Punakha,
-                Bhutan. I am currently studying at Jigme Namgyel
-                Engineering College. I am an enthusiastic learner
-                who enjoys exploring new ideas and improving my
-                knowledge. My goal is to develop my skills and
-                become a successful IT professional in the future.
-            </p>
+            <h2 class="section-title">About Me</h2>
+            <div class="card intro-card">
+                <p>
+                    Hello! Welcome to my personal portfolio. My name is Dechen Wangmo, and I am from Punakha, Bhutan. 
+                    I am currently studying at Jigme Namgyel Engineering College. I am an enthusiastic learner who enjoys 
+                    exploring new ideas and improving my knowledge. My goal is to develop my skills and become a successful 
+                    IT professional in the future.
+                </p>
+            </div>
         </section>
 
-        <!-- Interests Section -->
-        <section id="interests">
-            <h2>My Interests</h2>
-            <ul>
-                <li>Exploring new technology</li>
-                <li>Listening to music</li>
-                <li>Travelling and exploring new places</li>
-                <li>Learning new things</li>
-                <li>Spending time with family and friends</li>
-            </ul>
-        </section>
-
-        <!-- Skills Section -->
+        <!-- Skills & Interests Section -->
         <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Problem Solving</li>
-            </ul>
+            <h2 class="section-title">Skills & Interests</h2>
+            
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <div class="skills-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Interests</h3>
+                <ul class="interests-list">
+                    <li>Exploring new technology</li>
+                    <li>Listening to music</li>
+                    <li>Travelling and exploring new places</li>
+                    <li>Learning new things</li>
+                    <li>Spending time with family and friends</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2>My Projects</h2>
-
-            <article>
-                <h3>Project 1: Personal Portfolio</h3>
-                <img src="images/portfolio.jpg"
-                     alt="Personal Portfolio Website"
-                     class="project-img">
-                <p>A website that introduces me and displays my skills.</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-            </article>
-
-            <article>
-                <h3>Project 2: College Events Website</h3>
-                <img src="images/events.png"
-                     alt="College Events Website"
-                     class="project-img">
-                <p>A website concept for displaying college events.</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-            </article>
-
-            <article>
-                <h3>Project 3: Network Topology</h3>
-                <img src="images/network.jpg"
-                     alt="Computer Network Design"
-                     class="project-img">
-                <p>A networking practice project exploring IP addressing and connectivity.</p>
-                <p>Technology: Cisco Packet Tracer</p>
-            </article>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education">
-            <h2>My Education</h2>
-
-            <img src="images/college.jpg"
-                 alt="Jigme Namgyel Engineering College"
-                 class="college-img">
-
-            <h3>Jigme Namgyel Engineering College (JNEC)</h3>
-            <p><strong>Level:</strong> College Student</p>
-            <p><strong>Year:</strong> Second Year</p>
-
-            <p>
-                I am continuing my studies at Jigme Namgyel Engineering
-                College, where I am developing my knowledge and skills
-                in information technology and related subjects.
-            </p>
-        </section>
-
-        <!-- ========== CERTIFICATES SECTION ========== -->
-        <section id="certificates">
-            <h2>My Certificates</h2>
-            <p class="certificate-intro">A collection of my achievements, course completions, and participation certificates.</p>
-
-            <div class="certificate-grid">
-
-                <!-- 1. College Hackathon -->
-                <div class="certificate-card">
-                    <img src="images/hackathon.jpg"
-                         alt="College Hackathon Certificate"
-                         onerror="this.src='https://via.placeholder.com/280x160?text=College+Hackathon'">
-                    <h3>College Hackathon</h3>
-                    <p class="issuer">Jigme Namgyel Engineering College</p>
-                    <p class="date">2025</p>
-                    <p class="desc">Participated in a college-level hackathon, collaborating with a team to build a working prototype under time constraints.</p>
-                    <a href="certificates/hackathon.pdf" target="_blank" rel="noopener noreferrer">View Certificate (PDF) →</a>
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="card project-card">
+                    <img src="images/portfolio.jpg" alt="Personal Portfolio">
+                    <div class="project-details">
+                        <h3>Personal Portfolio</h3>
+                        <p>A website that introduces me and displays my skills.</p>
+                        <small>HTML, CSS, JavaScript</small>
+                    </div>
                 </div>
 
-                <!-- 2. YOUTH TECH-NOVATION LEVEL-III -->
-                <div class="certificate-card">
-                    <img src="images/cert-youth-tech.jpg"
-                         alt="Youth Tech-Novation Level-III Certificate"
-                         onerror="this.src='https://via.placeholder.com/280x160?text=Youth+Tech-Novation'">
-                    <h3>YOUTH TECH-NOVATION LEVEL-III</h3>
-                    <p class="issuer">Youth Tech-Novation Program</p>
-                    <p class="date">2025</p>
-                    <p class="desc">Successfully completed Level-III of the Youth Tech-Novation program, demonstrating advanced technical and innovation skills.</p>
-                    <a href="certificates/cert-youth-tech.pdf" target="_blank" rel="noopener noreferrer">View Certificate (PDF) →</a>
+                <div class="card project-card">
+                    <img src="images/events.png" alt="College Events Website">
+                    <div class="project-details">
+                        <h3>College Events Website</h3>
+                        <p>A website concept for displaying college events.</p>
+                        <small>HTML, CSS, JavaScript</small>
+                    </div>
                 </div>
 
-                <!-- 3. CCNA - Introduction to Networking -->
-                <div class="certificate-card">
-                    <img src="images/cert-ccna-intro.jpg"
-                         alt="CCNA Introduction to Networking Certificate"
-                         onerror="this.src='https://via.placeholder.com/280x160?text=CCNA+Intro+to+Networking'">
-                    <h3>CCNA: Introduction to Networking</h3>
-                    <p class="issuer">Cisco Networking Academy</p>
-                    <p class="date">2025</p>
-                    <p class="desc">Completed the CCNA Introduction to Networking course, covering network fundamentals, IP addressing, and basic configuration.</p>
-                    <a href="certificates/cert-ccna-intro.pdf" target="_blank" rel="noopener noreferrer">View Certificate (PDF) →</a>
-                </div>
-
-                <!-- 4. CCNA - Switching, Routing and Wireless -->
-                <div class="certificate-card">
-                    <img src="images/cert-ccna-switching.jpg"
-                         alt="CCNA Switching Routing and Wireless Certificate"
-                         onerror="this.src='https://via.placeholder.com/280x160?text=CCNA+Switching+Routing'">
-                    <h3>CCNA: Switching, Routing and Wireless</h3>
-                    <p class="issuer">Cisco Networking Academy</p>
-                    <p class="date">2025</p>
-                    <p class="desc">Completed advanced CCNA coursework on switching, routing protocols, and wireless networking essentials.</p>
-                    <a href="certificates/cert-ccns-switching.pdf" target="_blank" rel="noopener noreferrer">View Certificate (PDF) →</a>
-                </div>
-
-                <!-- 5. Coursera on Linux -->
-                <div class="certificate-card">
-                    <img src="images/cert-coursera-linux.jpg"
-                         alt="Coursera Linux Certificate"
-                         onerror="this.src='https://via.placeholder.com/280x160?text=Coursera+Linux'">
-                    <h3>Linux Fundamentals</h3>
-                    <p class="issuer">Coursera</p>
-                    <p class="date">2025</p>
-                    <p class="desc">Completed a Coursera course on Linux, covering command-line operations, file systems, and basic system administration.</p>
-                    <a href="certificates/cert-coursera-linux.pdf" target="_blank" rel="noopener noreferrer">View Certificate (PDF) →</a>
-                </div>
-
-                <!-- 6. Coursera on Python -->
-                <div class="certificate-card">
-                    <img src="images/python.jpg"
-                         alt="Coursera Python Certificate"
-                         onerror="this.src='https://via.placeholder.com/280x160?text=Coursera+Python'">
-                    <h3>Python Programming</h3>
-                    <p class="issuer">Coursera</p>
-                    <p class="date">2025</p>
-                    <p class="desc">Completed a Coursera Python course covering syntax, data structures, functions, and problem-solving techniques.</p>
-                    <a href="certificates/Python.pdf" target="_blank" rel="noopener noreferrer">View Certificate (PDF) →</a>
-                </div>
-
-                <!-- 7. Coursera on Web Technology -->
-                <div class="certificate-card">
-                    <img src="images/web.jpg"
-                         alt="Coursera Web Technology Certificate"
-                         onerror="this.src='https://via.placeholder.com/280x160?text=Coursera+Web+Technology'">
-                    <h3>Web Technology</h3>
-                    <p class="issuer">Coursera</p>
-                    <p class="date">2025</p>
-                    <p class="desc">Completed a Coursera course on Web Technology, covering HTML, CSS, JavaScript, and responsive design principles.</p>
-                    <a href="certificates/web.pdf" target="_blank" rel="noopener noreferrer">View Certificate (PDF) →</a>
+                <div class="card project-card">
+                    <img src="images/network.jpg" alt="Network Topology">
+                    <div class="project-details">
+                        <h3>Network Topology</h3>
+                        <p>A networking practice project exploring IP addressing and connectivity.</p>
+                        <small>Cisco Packet Tracer</small>
+                    </div>
                 </div>
 
             </div>
         </section>
-        <!-- ========== END OF CERTIFICATES SECTION ========== -->
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="card edu-card">
+                <img src="images/college.jpg" alt="JNEC">
+                <div>
+                    <h3>Jigme Namgyel Engineering College (JNEC)</h3>
+                    <p><strong>Level:</strong> College Student | <strong>Year:</strong> Second Year</p>
+                    <p>I am continuing my studies at Jigme Namgyel Engineering College, where I am developing my knowledge and skills in information technology and related subjects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates">
+            <h2 class="section-title">Certificates</h2>
+            <p class="subtitle">A collection of my achievements, course completions, and participation certificates.</p>
+
+            <div class="certificates-grid">
+                
+                <div class="card cert-card">
+                    <img src="images/hackathon.jpg" alt="Hackathon" onerror="this.src='https://via.placeholder.com/300x200?text=Hackathon'">
+                    <h3>College Hackathon</h3>
+                    <p class="issuer">Jigme Namgyel Engineering College</p>
+                    <a href="certificates/hackathon.pdf" target="_blank">View PDF →</a>
+                </div>
+
+                <div class="card cert-card">
+                    <img src="images/cert-youth-tech.jpg" alt="Youth Tech" onerror="this.src='https://via.placeholder.com/300x200?text=Youth+Tech'">
+                    <h3>YOUTH TECH-NOVATION LEVEL-III</h3>
+                    <p class="issuer">Youth Tech-Novation Program</p>
+                    <a href="certificates/cert-youth-tech.pdf" target="_blank">View PDF →</a>
+                </div>
+
+                <div class="card cert-card">
+                    <img src="images/cert-ccna-intro.jpg" alt="CCNA Intro" onerror="this.src='https://via.placeholder.com/300x200?text=CCNA+Intro'">
+                    <h3>CCNA: Introduction to Networking</h3>
+                    <p class="issuer">Cisco Networking Academy</p>
+                    <a href="certificates/cert-ccna-intro.pdf" target="_blank">View PDF →</a>
+                </div>
+
+                <div class="card cert-card">
+                    <img src="images/cert-ccna-switching.jpg" alt="CCNA Switching" onerror="this.src='https://via.placeholder.com/300x200?text=CCNA+Switching'">
+                    <h3>CCNA: Switching & Routing</h3>
+                    <p class="issuer">Cisco Networking Academy</p>
+                    <a href="certificates/cert-ccns-switching.pdf" target="_blank">View PDF →</a>
+                </div>
+
+                <div class="card cert-card">
+                    <img src="images/cert-coursera-linux.jpg" alt="Linux" onerror="this.src='https://via.placeholder.com/300x200?text=Linux'">
+                    <h3>Linux Fundamentals</h3>
+                    <p class="issuer">Coursera</p>
+                    <a href="certificates/cert-coursera-linux.pdf" target="_blank">View PDF →</a>
+                </div>
+
+                <div class="card cert-card">
+                    <img src="images/python.jpg" alt="Python" onerror="this.src='https://via.placeholder.com/300x200?text=Python'">
+                    <h3>Python Programming</h3>
+                    <p class="issuer">Coursera</p>
+                    <a href="certificates/Python.pdf" target="_blank">View PDF →</a>
+                </div>
+
+                <div class="card cert-card">
+                    <img src="images/web.jpg" alt="Web Tech" onerror="this.src='https://via.placeholder.com/300x200?text=Web+Technology'">
+                    <h3>Web Technology</h3>
+                    <p class="issuer">Coursera</p>
+                    <a href="certificates/web.pdf" target="_blank">View PDF →</a>
+                </div>
+
+            </div>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: dechendechenwangmo7@gmail.com</p>
-            <p>Location: Punakha, Bhutan</p>
+            <h2 class="section-title">Contact</h2>
+            <div class="card">
+               <p>
+    <strong>Email:</strong> 
+    <a href="mailto:dechendechenwangmo7@gmail.com" id="email-link" style="cursor: pointer;" title="Click to copy email">
+        dechendechenwangmo7@gmail.com
+    </a>
+</p>
+                <p><strong>Location:</strong> Punakha, Bhutan</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/dechendechenwangmo7-sketch/student_portfolio" target="_blank">github.com/dechendechenwangmo7-sketch</a></p>
+                <p><strong>Live Site:</strong> <a href="https://student-portfolio-o3x4.vercel.app/" target="_blank">student-portfolio-o3x4.vercel.app</a></p>
+            </div>
         </section>
 
-        <!-- Portfolio Links Section -->
-        <section id="portfolio-links">
-            <h2>My Portfolio Links</h2>
-
-            <p>
-                GitHub Repository:
-                <a href="https://github.com/dechendechenwangmo7-sketch/student_portfolio"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    View My GitHub Repository
-                </a>
-            </p>
-
-            <p>
-                Deployed Website:
-                <a href="https://student-portfolio-o3x4.vercel.app/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Visit My Live Portfolio
-                </a>
-            </p>
-        </section>
+        <footer>
+            <p>&copy; 2026 Dechen Wangmo. Built from scratch.</p>
+        </footer>
 
     </main>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop">↑ Back to Top</button>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Dechen Wangmo. All rights reserved.</p>
-    </footer>
-
+    <button id="backToTop">↑</button>
     <script src="js/script.js"></script>
 </body>
 </html>
