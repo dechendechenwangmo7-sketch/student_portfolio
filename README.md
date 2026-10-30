@@ -24,7 +24,7 @@ Hello! My name is Dechen Wangmo. I am from Punakha, Bhutan, and I am studying at
 - JavaScript
 
 ## Live Website
-[Visit My Portfolio](https://student-portfolio-o3x4.vercel.app/)
+[Visit My Portfolio](https://dechen-wangmo-portfolio.vercel.app/)
 
 ## GitHub Repository
 [View Source Code](https://github.com/dechendechenwangmo7-sketch/student_portfolio)

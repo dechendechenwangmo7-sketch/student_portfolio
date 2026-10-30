@@ -3,210 +3,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dechen Wangmo | Portfolio </title>
+    <title>Dechen Wangmo | Creative Portfolio</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Poppins for text, Caveat for the script name -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
     
+    <!-- FontAwesome for real Tech Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Left Sidebar -->
-    <aside class="sidebar">
-        <div class="sidebar-content">
-            <img src="images/pic.jpeg" alt="Dechen Wangmo" class="profile-pic">
-            <h1>Dechen Wangmo</h1>
-            <p class="role">Aspiring IT Professional & Web Developer</p>
-            
-            <nav class="main-nav">
-                <a href="#about">About Me</a>
-                <a href="#skills">Skills & Interests</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <!-- Scroll Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
 
-            <div class="sidebar-controls">
-                <button id="darkToggle">🌙 Dark Mode</button>
-            </div>
-        </div>
-    </aside>
+    <!-- Animated Glowing Background -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
 
-    <!-- Right Main Content -->
-    <main class="content">
+    <!-- Floating Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">Dechen<span>.</span></div>
         
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="card intro-card">
-                <p>
-                    Hello! Welcome to my personal portfolio. My name is Dechen Wangmo, and I am from Punakha, Bhutan. 
-                    I am currently studying at Jigme Namgyel Engineering College. I am an enthusiastic learner who enjoys 
-                    exploring new ideas and improving my knowledge. My goal is to develop my skills and become a successful 
-                    IT professional in the future.
-                </p>
-            </div>
-        </section>
+        <!-- Live Clock -->
+        <div class="clock" id="clock">00:00:00</div>
 
-        <!-- Skills & Interests Section -->
-        <section id="skills">
-            <h2 class="section-title">Skills & Interests</h2>
-            
-            <div class="card">
-                <h3>Technical Skills</h3>
-                <div class="skills-tags">
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#tech-stack">Tech Stack</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#journey">Journey</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact" class="btn-glow">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="deco deco-star">✨</div>
+        <div class="deco deco-sparkle">⭐</div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting-script">Hello, my name is</p>
+                <h1 class="name-script">Dechen Wangmo</h1>
+                
+                <h2>I am a <span id="typing-text" class="type-color"></span><span class="cursor">|</span></h2>
+                
+                <p>Welcome to my creative space. I am from Punakha, Bhutan, currently studying at Jigme Namgyel Engineering College. I love building modern web experiences.</p>
+                
+                <div class="skills-pills">
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
                     <span>Problem Solving</span>
                 </div>
-            </div>
 
-            <div class="card" style="margin-top: 20px;">
-                <h3>Interests</h3>
-                <ul class="interests-list">
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <button id="darkToggle" class="btn-glass">🌙 Dark Mode</button>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <!-- Camera Frame Effect -->
+                <div class="camera-frame">
+                    <img src="images/pic.jpeg" alt="Dechen Wangmo">
+                    <div class="camera-text">
+                        <span>📸 Captured Moment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Quick Stats Section -->
+        <section class="stats-section reveal">
+            <div class="stat-box glass-card">
+                <h3>3+</h3>
+                <p>Projects</p>
+            </div>
+            <div class="stat-box glass-card">
+                <h3>7</h3>
+                <p>Certificates</p>
+            </div>
+            <div class="stat-box glass-card">
+                <h3>100%</h3>
+                <p>Passion</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card">
+                <p>Hello! Welcome to my personal portfolio. My name is Dechen Wangmo. I am an enthusiastic learner who enjoys exploring new ideas and improving my knowledge. My goal is to develop my skills and become a successful IT professional in the future.</p>
+                <br>
+                <h3>My Interests</h3>
+                <ul class="modern-list">
                     <li>Exploring new technology</li>
-                    <li>Listening to music</li>
-                    <li>Travelling and exploring new places</li>
-                    <li>Learning new things</li>
+                    <li>Listening to music & travelling</li>
                     <li>Spending time with family and friends</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+        <!-- What I Do (Services) Section -->
+        <section id="services" class="section reveal">
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
                 
-                <div class="card project-card">
-                    <img src="images/portfolio.jpg" alt="Personal Portfolio">
-                    <div class="project-details">
-                        <h3>Personal Portfolio</h3>
-                        <p>A website that introduces me and displays my skills.</p>
-                        <small>HTML, CSS, JavaScript</small>
+                <div class="service-card glass-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and modern websites using HTML, CSS, and JavaScript with a focus on clean design.</p>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Network Setup</h3>
+                    <p>Configuring basic network topologies, IP addressing, and routing using Cisco Packet Tracer.</p>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI / UX Design</h3>
+                    <p>Designing beautiful, user-friendly interfaces with glassmorphism effects and smooth animations.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="section reveal">
+            <h2 class="section-title">My Tech Stack</h2>
+            <div class="tech-stack-grid">
+                
+                <div class="tech-item glass-card">
+                    <i class="fab fa-html5 tech-icon" style="color: #e34c26;"></i>
+                    <h4>HTML5</h4>
+                    <p>Markup</p>
+                </div>
+
+                <div class="tech-item glass-card">
+                    <i class="fab fa-css3-alt tech-icon" style="color: #264de4;"></i>
+                    <h4>CSS3</h4>
+                    <p>Styling</p>
+                </div>
+
+                <div class="tech-item glass-card">
+                    <i class="fab fa-js tech-icon" style="color: #f0db4f;"></i>
+                    <h4>JavaScript</h4>
+                    <p>Logic</p>
+                </div>
+
+                <div class="tech-item glass-card">
+                    <i class="fab fa-github tech-icon" style="color: #333;"></i>
+                    <h4>GitHub</h4>
+                    <p>Version Control</p>
+                </div>
+
+                <div class="tech-item glass-card">
+                    <i class="fas fa-network-wired tech-icon" style="color: #38bdf8;"></i>
+                    <h4>Networking</h4>
+                    <p>Cisco Tracer</p>
+                </div>
+
+                <div class="tech-item glass-card">
+                    <i class="fab fa-python tech-icon" style="color: #3776ab;"></i>
+                    <h4>Python</h4>
+                    <p>Programming</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="section reveal">
+            <h2 class="section-title">My Hobbies</h2>
+            <div class="grid-3">
+                
+                <div class="glass-card hobby-card">
+                    <div class="hobby-icon">📚</div>
+                    <h3>Reading & Learning</h3>
+                    <p>I love reading about new technologies and constantly learning new things to improve my skills.</p>
+                </div>
+
+                <div class="glass-card hobby-card">
+                    <div class="hobby-icon">🎵</div>
+                    <h3>Listening to Music</h3>
+                    <p>Music helps me relax and stay focused while I am coding or studying.</p>
+                </div>
+
+                <div class="glass-card hobby-card">
+                    <div class="hobby-icon">✈️</div>
+                    <h3>Travelling</h3>
+                    <p>Exploring new places, experiencing different cultures, and enjoying nature.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- My Journey Timeline Section -->
+        <section id="journey" class="section reveal">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline">
+                <!-- 1. Middle School -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Middle School 2018 - 2022</h3>
+                        <h4>Chapcha Middle Secondary School</h4> 
+                        <p>Where I built my foundational knowledge, discovered my curiosity for learning, and developed an interest in technology.</p>
+                    </div>
+                </div>
+                
+                <!-- 2. Higher Secondary -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Higher Secondary 2023 - 2024</h3>
+                        <h4>Chukha Central School</h4>
+                        <p>Studied Commerce, which helped me build strong analytical and problem-solving skills that I now apply to coding.</p>
                     </div>
                 </div>
 
-                <div class="card project-card">
-                    <img src="images/events.png" alt="College Events Website">
-                    <div class="project-details">
-                        <h3>College Events Website</h3>
-                        <p>A website concept for displaying college events.</p>
-                        <small>HTML, CSS, JavaScript</small>
+                <!-- 3. Present (College) -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>2026 - Present</h3>
+                        <h4>Jigme Namgyel Engineering College</h4>
+                        <p>Currently pursuing my studies in IT, learning web development, networking, and problem-solving.</p>
                     </div>
                 </div>
 
-                <div class="card project-card">
-                    <img src="images/network.jpg" alt="Network Topology">
-                    <div class="project-details">
-                        <h3>Network Topology</h3>
-                        <p>A networking practice project exploring IP addressing and connectivity.</p>
-                        <small>Cisco Packet Tracer</small>
+                <!-- 4. Goal -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Future Goal</h3>
+                        <h4>Becoming a Professional Developer</h4>
+                        <p>My goal is to build impactful web applications and continue growing as an IT professional.</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2 class="section-title">Education</h2>
-            <div class="card edu-card">
-                <img src="images/college.jpg" alt="JNEC">
-                <div>
-                    <h3>Jigme Namgyel Engineering College (JNEC)</h3>
-                    <p><strong>Level:</strong> College Student | <strong>Year:</strong> Second Year</p>
-                    <p>I am continuing my studies at Jigme Namgyel Engineering College, where I am developing my knowledge and skills in information technology and related subjects.</p>
+        <!-- Quote Banner -->
+        <section class="quote-section reveal">
+            <div class="quote-card">
+                <h2>"The beautiful thing about learning is that no one can take it away from you."</h2>
+                <p>- B.B. King</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid-3">
+                
+                <div class="glass-card project-card">
+                    <div class="img-wrapper"><img src="images/portfolio.jpg" alt="Portfolio"></div>
+                    <h3>Personal Portfolio</h3>
+                    <p>A website that introduces me and displays my skills.</p>
+                    <span class="tech-tag">HTML/CSS/JS</span>
                 </div>
+
+                <div class="glass-card project-card">
+                    <div class="img-wrapper"><img src="images/events.png" alt="College Events"></div>
+                    <h3>College Events</h3>
+                    <p>A website concept for displaying college events.</p>
+                    <span class="tech-tag">HTML/CSS/JS</span>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="img-wrapper"><img src="images/network.jpg" alt="Network Topology"></div>
+                    <h3>Network Topology</h3>
+                    <p>A networking practice project exploring IP addressing.</p>
+                    <span class="tech-tag">Cisco Tracer</span>
+                </div>
+
             </div>
         </section>
 
         <!-- Certificates Section -->
-        <section id="certificates">
+        <section id="certificates" class="section reveal">
             <h2 class="section-title">Certificates</h2>
-            <p class="subtitle">A collection of my achievements, course completions, and participation certificates.</p>
-
-            <div class="certificates-grid">
+            <div class="grid-3">
                 
-                <div class="card cert-card">
-                    <img src="images/hackathon.jpg" alt="Hackathon" onerror="this.src='https://via.placeholder.com/300x200?text=Hackathon'">
+                <div class="glass-card cert-card">
+                    <div class="img-wrapper"><img src="images/hackathon.jpg" alt="Hackathon" onerror="this.src='https://via.placeholder.com/300x200?text=Hackathon'"></div>
                     <h3>College Hackathon</h3>
-                    <p class="issuer">Jigme Namgyel Engineering College</p>
-                    <a href="certificates/hackathon.pdf" target="_blank">View PDF →</a>
+                    <p>Jigme Namgyel Engineering College</p>
+                    <a href="certificates/hackathon.pdf" target="_blank" class="view-btn">View PDF →</a>
                 </div>
 
-                <div class="card cert-card">
-                    <img src="images/cert-youth-tech.jpg" alt="Youth Tech" onerror="this.src='https://via.placeholder.com/300x200?text=Youth+Tech'">
-                    <h3>YOUTH TECH-NOVATION LEVEL-III</h3>
-                    <p class="issuer">Youth Tech-Novation Program</p>
-                    <a href="certificates/cert-youth-tech.pdf" target="_blank">View PDF →</a>
+                <div class="glass-card cert-card">
+                    <div class="img-wrapper"><img src="images/cert-youth-tech.jpg" alt="Youth Tech" onerror="this.src='https://via.placeholder.com/300x200?text=Youth+Tech'"></div>
+                    <h3>YOUTH TECH-NOVATION L3</h3>
+                    <p>Youth Tech-Novation Program</p>
+                    <a href="certificates/cert-youth-tech.pdf" target="_blank" class="view-btn">View PDF →</a>
                 </div>
 
-                <div class="card cert-card">
-                    <img src="images/cert-ccna-intro.jpg" alt="CCNA Intro" onerror="this.src='https://via.placeholder.com/300x200?text=CCNA+Intro'">
-                    <h3>CCNA: Introduction to Networking</h3>
-                    <p class="issuer">Cisco Networking Academy</p>
-                    <a href="certificates/cert-ccna-intro.pdf" target="_blank">View PDF →</a>
+                <div class="glass-card cert-card">
+                    <div class="img-wrapper"><img src="images/cert-ccna-intro.jpg" alt="CCNA 1" onerror="this.src='https://via.placeholder.com/300x200?text=CCNA+Intro'"></div>
+                    <h3>CCNA: Intro to Networking</h3>
+                    <p>Cisco Networking Academy</p>
+                    <a href="certificates/cert-ccna-intro.pdf" target="_blank" class="view-btn">View PDF →</a>
                 </div>
 
-                <div class="card cert-card">
-                    <img src="images/cert-ccna-switching.jpg" alt="CCNA Switching" onerror="this.src='https://via.placeholder.com/300x200?text=CCNA+Switching'">
+                <div class="glass-card cert-card">
+                    <div class="img-wrapper"><img src="images/cert-ccna-switching.jpg" alt="CCNA 2" onerror="this.src='https://via.placeholder.com/300x200?text=CCNA+Switching'"></div>
                     <h3>CCNA: Switching & Routing</h3>
-                    <p class="issuer">Cisco Networking Academy</p>
-                    <a href="certificates/cert-ccns-switching.pdf" target="_blank">View PDF →</a>
+                    <p>Cisco Networking Academy</p>
+                    <a href="certificates/cert-ccns-switching.pdf" target="_blank" class="view-btn">View PDF →</a>
                 </div>
 
-                <div class="card cert-card">
-                    <img src="images/cert-coursera-linux.jpg" alt="Linux" onerror="this.src='https://via.placeholder.com/300x200?text=Linux'">
+                <div class="glass-card cert-card">
+                    <div class="img-wrapper"><img src="images/cert-coursera-linux.jpg" alt="Linux" onerror="this.src='https://via.placeholder.com/300x200?text=Linux'"></div>
                     <h3>Linux Fundamentals</h3>
-                    <p class="issuer">Coursera</p>
-                    <a href="certificates/cert-coursera-linux.pdf" target="_blank">View PDF →</a>
+                    <p>Coursera</p>
+                    <a href="certificates/cert-coursera-linux.pdf" target="_blank" class="view-btn">View PDF →</a>
                 </div>
 
-                <div class="card cert-card">
-                    <img src="images/python.jpg" alt="Python" onerror="this.src='https://via.placeholder.com/300x200?text=Python'">
+                <div class="glass-card cert-card">
+                    <div class="img-wrapper"><img src="images/python.jpg" alt="Python" onerror="this.src='https://via.placeholder.com/300x200?text=Python'"></div>
                     <h3>Python Programming</h3>
-                    <p class="issuer">Coursera</p>
-                    <a href="certificates/Python.pdf" target="_blank">View PDF →</a>
+                    <p>Coursera</p>
+                    <a href="certificates/Python.pdf" target="_blank" class="view-btn">View PDF →</a>
                 </div>
 
-                <div class="card cert-card">
-                    <img src="images/web.jpg" alt="Web Tech" onerror="this.src='https://via.placeholder.com/300x200?text=Web+Technology'">
+                <div class="glass-card cert-card">
+                    <div class="img-wrapper"><img src="images/web.jpg" alt="Web Tech" onerror="this.src='https://via.placeholder.com/300x200?text=Web+Technology'"></div>
                     <h3>Web Technology</h3>
-                    <p class="issuer">Coursera</p>
-                    <a href="certificates/web.pdf" target="_blank">View PDF →</a>
+                    <p>Coursera</p>
+                    <a href="certificates/web.pdf" target="_blank" class="view-btn">View PDF →</a>
                 </div>
 
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="card">
-               <p>
-                    <strong>Email:</strong> 
-                    <a href="mailto:dechendechenwangmo7@gmail.com" id="email-link" style="cursor: pointer;" title="Click to copy email">
-                        dechendechenwangmo7@gmail.com
-                    </a>
-                </p>
-                <p><strong>Location:</strong> Punakha, Bhutan</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/dechendechenwangmo7-sketch/student_portfolio" target="_blank">github.com/dechendechenwangmo7-sketch</a></p>
-                <!-- UPDATED VERCEL LINK BELOW -->
-                <p><strong>Live Site:</strong> <a href="https://dechen-wangmo-portfolio.vercel.app/" target="_blank">dechenportfolio.vercel.app</a></p>
+        <!-- Contact Section with Form -->
+        <section id="contact" class="section reveal">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="glass-card contact-card">
+                <p>I am always open to discussing new projects, creative ideas or opportunities.</p>
+                
+                <!-- Glassmorphism Contact Form -->
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully! (This is a demo)');">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea placeholder="Your Message..." rows="5" required></textarea>
+                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">Send Message 🚀</button>
+                </form>
+
+                <div class="contact-divider">
+                    <span>or reach out directly</span>
+                </div>
+
+                <div class="contact-links">
+                    <p><strong>Email:</strong> <a href="mailto:dechendechenwangmo7@gmail.com" id="email-link" class="copy-email">dechendechenwangmo7@gmail.com</a></p>
+                    <p><strong>Location:</strong> Punakha, Bhutan</p>
+                    
+                    <div class="social-buttons">
+                        <a href="https://github.com/dechendechenwangmo7-sketch/student_portfolio" target="_blank" class="btn-animated">
+                            <span>💻 View GitHub</span>
+                        </a>
+                        <a href="https://dechen-wangmo-portfolio.vercel.app/" target="_blank" class="btn-animated">
+                            <span>🌐 Live Site</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <footer>
-            <p>&copy; 2026 Dechen Wangmo. Built from scratch.</p>
-        </footer>
-
     </main>
+
+    <!-- Professional Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Dechen Wangmo. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/dechendechenwangmo7-sketch/student_portfolio" target="_blank">GitHub</a>
+                <a href="mailto:dechendechenwangmo7@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
 
     <button id="backToTop">↑</button>
     <script src="js/script.js"></script>
